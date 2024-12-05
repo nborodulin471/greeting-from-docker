@@ -52,8 +52,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: |
-          docker build -t boroni471/greeting-from-docker:latest .
+        run: ./gradlew bootBuildImage
 
       - name: Push Docker image
         run: |
