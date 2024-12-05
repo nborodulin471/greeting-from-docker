@@ -61,7 +61,7 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker push docker.io/library/greeting-from-docker:0.0.1-SNAPSHOT     
+          docker push ${{ secrets.DOCKER_USERNAME }}/greeting-from-docker:0.0.1-SNAPSHOT     
         
 
 
