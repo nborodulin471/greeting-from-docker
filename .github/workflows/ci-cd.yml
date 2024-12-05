@@ -53,7 +53,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t boroni471/greeting-from-docker:latest 
+          docker build -t boroni471/greeting-from-docker:latest .
 
       - name: Push Docker image
         run: |
