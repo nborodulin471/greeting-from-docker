@@ -61,7 +61,7 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker push boroni471/greeting-from-docker:latest     
+          docker push boroni471/greeting-from-docker:0.0.1-SNAPSHOT     
         
 
 
